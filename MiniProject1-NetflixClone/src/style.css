@@ -1,0 +1,96 @@
+/* mobile first  */
+
+ .col-8, .col-4, .col-3{
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 0px !important;
+}
+.btn{
+  border-radius: 2px !important;
+}
+.btn-danger{
+  background-color: #e50914 !important;
+}
+.container-fluid{
+  margin: 0 !important;
+}
+body{
+    background-color: rgb(35, 35, 66);
+    margin: auto;
+}
+nav{
+  margin-top: 35px;
+  margin-bottom: 50px;
+  padding: 0 2rem;
+}
+
+
+
+
+.navbar-row{
+  display: flex;
+  flex-direction: row;
+  /* border: #63c971 2px solid; */
+  padding: 0px 0px !important;
+}
+.logo img{
+  height: 1.6rem;
+}
+.story-card{
+  height: 98vh;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  padding: 50px 5%;
+  position: relative;
+  width: 100%;
+  max-width: 950px;
+  text-align: center;
+  z-index: 1;
+}
+.story-card-body{
+  margin: auto;
+  max-width: 950px;
+  position: relative;
+}
+.story-card-title{
+  font-size: 1.75rem;
+}
+.story-card-subtitle{
+  font-size: 1.125rem;
+  margin: 1rem auto;
+  font-weight: 400 !important;
+}
+.ad-container{
+  max-width: 100vw;
+}
+.ad-container img{
+  position:relative;
+  width: 100%;
+}
+.email-form-title{
+  font: 1.1rem !important;
+  font-weight: 400 !important;
+  padding: 0 40px;
+}
+form input{
+  box-shadow: none;
+  width: 100%;
+  height: 2rem;
+  appearance: none;
+  border: 1px solid #8c8c8c;
+  padding: 10px;
+}
+
+
+
+
+/* FOR DESTOP VIEW */
+@media (min-width: 1024px) {
+    .gfg-div {
+        background-color: #63c971;
+        color: #fff;
+      } 
+}
+
+
