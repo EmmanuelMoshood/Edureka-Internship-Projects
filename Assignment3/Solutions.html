@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>assignment 3</h1>
+    
+
+    <script>
+
+
+class RestaurantManager {
+
+//first property, array of restaurant objects. 
+restaurantList = [
+  {
+    id: 1,
+    restaurantName: 'KFC',
+    address: 'Anand Vihar',
+    city: 'Delhi'
+  },
+  {
+    id: 2,
+    restaurantName: 'Domino',
+    address: 'Savita Vihar',
+    city: 'Delhi'
+  },
+  {
+    id: 3,
+    restaurantName: 'Burger King',
+    address: 'Civil Lines',
+    city: 'Pune'
+  },
+  {
+    id: 4,
+    restaurantName: 'Subway',
+    address: 'Cantonment',
+    city: 'Mumbai'
+  },
+  {
+    id: 5,
+    restaurantName: 'Subway',
+    address: 'Cantonment',
+    city: 'Pune'
+  }
+]
+
+//print all restaurants names
+printAllResNames = () => {
+//     //get each item's restaurant name into an array
+  console.log("test")
+  return this.restaurantList.map(item => item.restaurantName)
+
+}  
+
+//filter restaurant by city name passed in as an argument
+filterRestaurantByCity = (cityName) => {
+  let arrResInCity = this.restaurantList.filter(item => item.city === cityName)
+  let mappedArr =  arrResInCity.map(item => item.restaurantName);
+   // return mappedArr
+  for(let i=0; i<mappedArr.length; i++){
+    console.log(mappedArr[i]) ;
+  }
+}
+
+}
+
+
+//to call any of the properties of a class, an object has to be created
+//create new object "sampleObj" from class
+const sampleObj = new RestaurantManager();
+
+//now  using the object, call any property/method inside the object
+const result1 = sampleObj.printAllResNames();
+console.log(result1)
+
+const result2 = sampleObj.filterRestaurantByCity("Delhi");
+console.log(result2)
+    </script>
+</body>
+</html>
