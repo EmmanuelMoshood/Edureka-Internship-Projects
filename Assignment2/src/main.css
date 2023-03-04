@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    background-color: #fbfbfb;
+    margin: auto;
+}
+.back-img{
+    background-image: url("../images/wallpaper.png"), linear-gradient(to bottom, #323233, #4F0707);
+    /* background-size: cover; */
+    height:480px;
+    background-size: 1300px ;
+    background-position: -304px;
+}
+.login, .create-acc{
+    text-decoration: none;
+    color: white;
+}
+.login:hover, .create-acc:hover{
+    color: white;
+}
+.logo{
+    display: inline;
+    color: #EB2929;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    font-size: 70px;
+    font-weight: 600;  
+}
+.mantra{
+    color: #fbfbfbfb;
+}
+.input-field{
+    height: 60px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.login-signup-row{
+    display: none;
+}
+.logo-container{
+    padding-top: 4rem !important;
+}
+
+/* quick searches cards */
+.quick-search-section{
+    padding: 35px 30px;
+}
+.text-bold-blue{
+    font-size: 24px;
+    font-weight: 700;
+    color: #192F60;
+}
+.sub-title{
+    color: #8C96AB;
+}
+.quick-search-cards{
+    height: 160px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.card-image{
+    height: 160px !important;
+    width: 160px !important;
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+.card-body{
+    position: absolute;
+    left: 160px;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #192F60;
+}
+.card-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8C96AB;
+}
+
+
+/* id for cards  */
+#card-image1{
+    background-image: url(../images/Breakfast.png);
+}
+#card-image2{
+    background-image: url(../images/Lunch.png);
+}
+#card-image3{
+    background-image: url(../images/Snacks.png);
+}
+#card-image4{
+    background-image: url(../images/Dinner.png);
+}
+#card-image5{
+    background-image: url(../images/Drinks.png);
+}
+#card-image6{
+    background-image: url(../images/Nightlife.png);
+}
+
+
+/* large screens > iPad: 768  */
+@media (min-width: 420px) {
+    body{
+        background-color: #fbfbfb;
+        width: 1366px;
+        /* overflow: hidden; */
+        margin: auto;
+    }
+    .back-img{
+        background-size: 2000px !important;
+        background-position: center !important;
+    }
+    .login-signup-row{
+        display: flex;
+    }
+    .logo-container{
+        padding-top: 1rem !important;
+    }
+}
